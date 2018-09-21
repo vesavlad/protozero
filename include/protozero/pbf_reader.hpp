@@ -60,7 +60,7 @@ namespace protozero {
  * instead of get_bytes() or get_string(), if you need this guarantee.
  */
 class pbf_reader {
-
+public:
     // A pointer to the next unread data.
     const char* m_data = nullptr;
 
