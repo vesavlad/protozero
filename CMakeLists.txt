@@ -3,3 +3,5 @@ project(protozero)
 
 add_library(protozero INTERFACE)
 target_include_directories(protozero INTERFACE include)
+
+target_compile_definitions(protozero INTERFACE -DPROTOZERO_USE_VIEW=std::string_view)
